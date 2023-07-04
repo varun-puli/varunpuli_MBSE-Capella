@@ -17,10 +17,9 @@
 [linkedin]: https://www.linkedin.com/in/varun-pulipati/
 
 
-Here are some ideas to get you started:
 
 - 🔭 I’m currently working on Model-Based Projects
 - 👯 I’m looking to collaborate on developing an MBSE project
-- 🤔 I’m looking for help in Finding full-time challenges in solving complex projects in Automobile Industry
+- 🤔 I’m looking for help in setting up new challenges in solving complex projects in Automobile Industry
 - 💬 Ask me about SysML, Requirements Engineering, MBSE, Simulink, Matlab
 
