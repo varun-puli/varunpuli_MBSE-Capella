@@ -1,9 +1,9 @@
-# varunpuli_MBSE-MBD
+# varunpuli_MBSE
 <h1>Hi, I'm Varun! 
   
-  <br/><a href="https://github.com/varun-puli">Model Based Systems Engineer</a>, 
+  #<br/><a href="https://github.com/varun-puli">Model Based Systems Engineer</a>, 
   
-  <a href="https://www.linkedin.com/in/varun-pulipati/">Systems Engineer</a>,
+  #<a href="https://www.linkedin.com/in/varun-pulipati/">Systems Engineer</a>,
 
 
 
@@ -21,5 +21,5 @@
 - 🔭 I’m currently working on Model-Based Projects
 - 👯 I’m looking to collaborate on developing an MBSE project
 - 🤔 I’m looking for help in setting up new challenges in solving complex projects in Automobile Industry
-- 💬 Ask me about SysML, Requirements Engineering, MBSE, Simulink, Matlab
+- 💬 Ask me about SysML, Requirements Engineering, MBSE, PLE in MBSE, Simulink, Matlab
 
