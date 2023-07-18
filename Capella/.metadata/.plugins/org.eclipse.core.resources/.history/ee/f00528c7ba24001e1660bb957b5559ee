@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_6.1.0-->
+<org.polarsys.capella.core.data.capellamodeller:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/6.0.0"
+    xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/6.0.0"
+    xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/6.0.0"
+    xmlns:org.polarsys.capella.core.data.epbs="http://www.polarsys.org/capella/core/epbs/6.0.0"
+    xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information="http://www.polarsys.org/capella/core/information/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information.datatype="http://www.polarsys.org/capella/core/information/datatype/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/6.0.0"
+    xmlns:org.polarsys.capella.core.data.interaction="http://www.polarsys.org/capella/core/interaction/6.0.0"
+    xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/6.0.0"
+    xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/6.0.0"
+    id="519b2b80-95b1-43d2-8afb-0110a273b725"
+    name="SPMCS">
+  <ownedExtensions xsi:type="libraries:ModelInformation" id="f6b8b042-8396-4f3e-9d55-1adff4d6323d"/>
+  <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
+      id="f03c92c6-7650-46b3-a473-282e8b383937" name="ProgressStatus">
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="d427d564-b3c3-4939-8058-588059f1ba41" name="DRAFT"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="5442840b-5ccd-4112-848b-f0ae6b32db02" name="TO_BE_REVIEWED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="cc74db49-877e-4710-8f96-4bb4780f447a" name="TO_BE_DISCUSSED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="54d49a57-949d-46b5-80c1-e98e54244a4a" name="REWORK_NECESSARY"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="4e4f669d-81de-4fca-b54c-4e6f5d8956fc" name="UNDER_REWORK"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="cb35dcf5-e9fb-440b-a78e-fa838b81e877" name="REVIEWED_OK"/>
+  </ownedEnumerationPropertyTypes>
+  <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue" id="115ff5e4-ad72-4ad7-b1d5-ddefd2d7290d"
+      key="projectApproach" value="SingletonComponents"/>
+  <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
+      id="2f6e345b-2cdc-45dc-a196-c1ec20957075" name="SPMCS">
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
+        id="7a88c801-9008-4948-83bd-0dd3f016bd08" name="Operational Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
+          id="de2a6f77-a616-4077-8510-90493360e405" name="Operational Activities">
+        <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+            id="bd17664b-647c-45a1-908b-a64ebee317eb" name="Root Operational Activity">
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="04ea18c4-f48a-4caf-af32-abbcc5580a8c" name="Charge USB Device">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="87995834-e390-4aa4-8702-5e670c6c2504" involved="#74ec062b-1ab3-4b9d-8a42-c8e3461dd571"
+                source="#3b6641c2-a975-4f41-9e7a-a2c2151f4580" target="#32955131-1481-4cce-a44a-e9bd242ec9a6"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="32955131-1481-4cce-a44a-e9bd242ec9a6" involved="#9e40c9f9-4c69-4b13-9285-537d9f27889a"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="3b6641c2-a975-4f41-9e7a-a2c2151f4580" involved="#d7dcd2c3-8477-4e48-813b-37d723789282"/>
+          </ownedFunctionalChains>
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="dfc9c5e2-f347-41f6-baf3-5d3183cb2800" name="Disconnect Device">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="47ddabdd-4ba3-4776-b69a-e16022585c5b" involved="#cc5f8a43-ae93-414f-b3ce-b1fd17f3e959"
+                source="#eb990eae-40f1-4bd4-86a8-0f75236740f0" target="#fc55762d-7d09-41fe-a877-e886f8b9526f"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="fc55762d-7d09-41fe-a877-e886f8b9526f" involved="#8202fa01-d042-470e-95ae-34f849bfae3f"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="eb990eae-40f1-4bd4-86a8-0f75236740f0" involved="#fa6f2036-ef07-41e0-b414-0cddebf7e21f"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="8cab43d8-c018-4bde-aa9e-7a2427737078" involved="#60a33223-fc1c-4e9e-8fed-0bfafc5229bb"
+                source="#eb990eae-40f1-4bd4-86a8-0f75236740f0" target="#1cea4b47-5c37-47b9-874b-c1d361487f59"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="1cea4b47-5c37-47b9-874b-c1d361487f59" involved="#db62a1e8-d839-47d8-af28-147bb11d99de"/>
+          </ownedFunctionalChains>
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="1fa48479-6fe5-4431-99b8-6f6536984871" name="Provide 24 hour visibility">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="3d2894a9-7e0d-4d5e-8385-2b902f8564e6" involved="#f4927822-abef-46f5-ad28-ae656f83b266"
+                source="#dfaa40a2-4253-41c0-a3e9-4084506f6023" target="#1105491a-a2ac-469f-a2f2-2ab11aad5edd"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="1105491a-a2ac-469f-a2f2-2ab11aad5edd" involved="#c29ba7d9-5518-44df-9fb7-efe6ea9ec9c7"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="dfaa40a2-4253-41c0-a3e9-4084506f6023" involved="#8cd88e0f-e88d-4495-8ee9-ab4d62a59f98"/>
+          </ownedFunctionalChains>
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="d42a6df7-4a4c-4e09-adb7-21696a175869" name="Monitor Operation Remotely">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="bf5c90de-5a95-4ee5-9626-265076522957" involved="#ebff2039-ec31-48c7-b6b5-e4cf7de64105"
+                source="#45132cca-1b2d-4ec2-9379-575e598a21b3" target="#3a9f0798-c190-4bf9-85a6-797e1071c0d0"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="3a9f0798-c190-4bf9-85a6-797e1071c0d0" involved="#072f594d-2a2c-4638-9e9a-f8bef9b4b65b"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="45132cca-1b2d-4ec2-9379-575e598a21b3" involved="#27f69cab-5346-45cb-b383-144a120fd6b9"/>
+          </ownedFunctionalChains>
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="4d7a1f92-97eb-42c8-8d67-a9dc882cc3b0" name="Connect USB Device">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="bacf3564-b931-4950-b65d-a6988b0c5fb0" involved="#0fb7308d-230c-4edd-85d2-f9396f79215c"
+                source="#2570efa0-e508-4e45-88c6-8ca1f63d2c37" target="#13b8c1a4-bb72-405b-9e8c-637322a08580"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="13b8c1a4-bb72-405b-9e8c-637322a08580" involved="#681aee77-4c24-4884-99ca-da8b156d2c59"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="2570efa0-e508-4e45-88c6-8ca1f63d2c37" involved="#cc6ed1cf-13f6-46c8-bfe6-b1378f6cebed"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="4b84d005-8b9c-4ed6-b01d-7479a95cceef" involved="#fa55ee5d-0983-48e4-b322-120d16fa40bf"
+                source="#2570efa0-e508-4e45-88c6-8ca1f63d2c37" target="#edf266a5-c4eb-4841-82ea-f2b9105a0683"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="edf266a5-c4eb-4841-82ea-f2b9105a0683" involved="#5c89e425-2824-453f-9667-b34bad093801"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="5808b22d-64ff-4e40-9577-4e392a0885b5" involved="#c8af0022-9ca3-4c0e-bbb9-82e61972c73e"
+                source="#ac17a3eb-70f0-4726-8d28-7641b030a416" target="#47c499ea-7b0e-4911-a54a-edc428ac5b28"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="47c499ea-7b0e-4911-a54a-edc428ac5b28" involved="#a9ee1928-3755-4f14-bd85-d0d68f3d8eac"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="ac17a3eb-70f0-4726-8d28-7641b030a416" involved="#1c56e87f-bfac-4219-ad30-d2ab7860cde5"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="9ee3bc0a-6f3a-45b5-9397-67f09709d127" involved="#8153d012-6390-4ad1-a689-cc1fa3ffb208"
+                source="#2570efa0-e508-4e45-88c6-8ca1f63d2c37" target="#47c499ea-7b0e-4911-a54a-edc428ac5b28"/>
+          </ownedFunctionalChains>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="d7dcd2c3-8477-4e48-813b-37d723789282" name="Charge USB Device"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="5c89e425-2824-453f-9667-b34bad093801" name="Receive Connectiom from USB Device"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="072f594d-2a2c-4638-9e9a-f8bef9b4b65b" name="Evaluate Performance"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="cc6ed1cf-13f6-46c8-bfe6-b1378f6cebed" name="Connect USB Device"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="fa6f2036-ef07-41e0-b414-0cddebf7e21f" name="Disconnect USB Device"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="c29ba7d9-5518-44df-9fb7-efe6ea9ec9c7" name="Locate Charger"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="8cd88e0f-e88d-4495-8ee9-ab4d62a59f98" name="Illuminate at night"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="681aee77-4c24-4884-99ca-da8b156d2c59" name="Receive Connection"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="9e40c9f9-4c69-4b13-9285-537d9f27889a" name="Accept Charge"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="27f69cab-5346-45cb-b383-144a120fd6b9" name="Provide Performance"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="db62a1e8-d839-47d8-af28-147bb11d99de" name="Disconnect Charger"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="8202fa01-d042-470e-95ae-34f849bfae3f" name="Disconnect Device"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="1c56e87f-bfac-4219-ad30-d2ab7860cde5" name="Provide State"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="a9ee1928-3755-4f14-bd85-d0d68f3d8eac" name="Comprehend State"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="f4927822-abef-46f5-ad28-ae656f83b266" name="Light" target="#c29ba7d9-5518-44df-9fb7-efe6ea9ec9c7"
+              source="#8cd88e0f-e88d-4495-8ee9-ab4d62a59f98"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="fa55ee5d-0983-48e4-b322-120d16fa40bf" name="Charger Connection"
+              target="#5c89e425-2824-453f-9667-b34bad093801" source="#cc6ed1cf-13f6-46c8-bfe6-b1378f6cebed"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="0fb7308d-230c-4edd-85d2-f9396f79215c" name="USB Device Connection"
+              target="#681aee77-4c24-4884-99ca-da8b156d2c59" source="#cc6ed1cf-13f6-46c8-bfe6-b1378f6cebed"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ebff2039-ec31-48c7-b6b5-e4cf7de64105" name="Performance" target="#072f594d-2a2c-4638-9e9a-f8bef9b4b65b"
+              source="#27f69cab-5346-45cb-b383-144a120fd6b9"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="74ec062b-1ab3-4b9d-8a42-c8e3461dd571" name="Energy" target="#9e40c9f9-4c69-4b13-9285-537d9f27889a"
+              source="#d7dcd2c3-8477-4e48-813b-37d723789282"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="60a33223-fc1c-4e9e-8fed-0bfafc5229bb" name="Charger Disconnect"
+              target="#db62a1e8-d839-47d8-af28-147bb11d99de" source="#fa6f2036-ef07-41e0-b414-0cddebf7e21f"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="cc5f8a43-ae93-414f-b3ce-b1fd17f3e959" name="USB Device Disconnect"
+              target="#8202fa01-d042-470e-95ae-34f849bfae3f" source="#fa6f2036-ef07-41e0-b414-0cddebf7e21f"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="c8af0022-9ca3-4c0e-bbb9-82e61972c73e" name="State of Charge" target="#a9ee1928-3755-4f14-bd85-d0d68f3d8eac"
+              source="#1c56e87f-bfac-4219-ad30-d2ab7860cde5"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="8153d012-6390-4ad1-a689-cc1fa3ffb208" name="State" target="#a9ee1928-3755-4f14-bd85-d0d68f3d8eac"
+              source="#cc6ed1cf-13f6-46c8-bfe6-b1378f6cebed"/>
+        </ownedOperationalActivities>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
+          id="9af31bf1-4799-4dd4-a5ab-942a87cdb3eb" name="Operational Capabilities">
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="5b8f02db-ce96-426c-bb7a-a8fa12120850" name="Provide 24 hours visibility">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="d464ec79-ddb8-4349-9384-ae6d836df758" involved="#d2532880-2c9f-43ca-82fa-eff211861acc"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="0af56b74-a09b-4532-9add-b4e162fd635c" name="Connect to USB Device Cable">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="78784ffe-a7f8-45e6-9207-24b7358fe532" involved="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="65da71cb-fe02-4954-b49b-cf2ffd7bdb7a" involved="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="040e5603-54d6-40a9-8200-e69fe237cce1" involved="#d2532880-2c9f-43ca-82fa-eff211861acc"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="763cdbc8-eaf0-4da5-b682-809c269747f4" name="Disconnect USB Device Cable">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="49bb0472-9b44-4e2f-b31c-07bc0a5cb786" involved="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="bd6aa803-bdc2-43e8-889c-cbd9a328affa" involved="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="766d546c-e8dd-4ed4-a275-ce1aff7b2300" involved="#d2532880-2c9f-43ca-82fa-eff211861acc"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="9d82a673-9f89-4ee4-aeaa-c39ea579e514" name="Charge USB Device">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="478d3304-1495-4585-aa79-ee67fbe5e4dd" involved="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="0190f3c5-c92a-4160-867e-21c1d16c397f" involved="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="160a280d-7a2b-43f8-aa47-71146de57787" name="Monitor Operation Remotely">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="358f4339-bd52-4c3f-8c35-7896499c1155" involved="#30508fbb-2dad-4742-a135-6f0364ed46b8"/>
+        </ownedOperationalCapabilities>
+      </ownedAbstractCapabilityPkg>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="3d3a44f0-06aa-4649-b053-6d952ca11312" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="55fe2f29-27b9-41f3-a77a-a168d7bd23a4" name="Data"/>
+      <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="0405d0e0-260c-4cc0-be87-d490d59686e8"
+          name="Roles"/>
+      <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="7e2e1f8c-2426-4ddc-a2f1-e03ba1a31744"
+          name="Operational Entities">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="4559ffc2-8f41-41de-8033-e174bedd3988"
+            name="Charger" abstractType="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="fe52c87c-3cab-410e-aa21-8beda2e65e05"
+            name="USB Device" abstractType="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="14a10f90-487d-47ce-929c-d39233bec738"
+            name="User" abstractType="#d2532880-2c9f-43ca-82fa-eff211861acc"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="32418477-cb0d-4da6-b30e-ef1355b08b79"
+            name="Developer" abstractType="#30508fbb-2dad-4742-a135-6f0364ed46b8"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="d4cb2b21-11db-4e83-9684-879ce4a6cb02"
+            name="Charger">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="3d3e471a-9630-4580-bd76-d970fc61f3ee" targetElement="#d7dcd2c3-8477-4e48-813b-37d723789282"
+              sourceElement="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="c4cc54d7-e9e0-4522-ba82-14e0313bcb4f" targetElement="#8cd88e0f-e88d-4495-8ee9-ab4d62a59f98"
+              sourceElement="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="b2c8ded1-0ebe-471c-8ce1-55a52ddc7c12" targetElement="#5c89e425-2824-453f-9667-b34bad093801"
+              sourceElement="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="7f0c9f01-8d62-4001-8d53-f906a5d11e39" targetElement="#db62a1e8-d839-47d8-af28-147bb11d99de"
+              sourceElement="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="223a3928-81d3-4573-acb8-c0ca33764c97" targetElement="#1c56e87f-bfac-4219-ad30-d2ab7860cde5"
+              sourceElement="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="f0f82df6-09f5-4686-838a-8e9a6ea8e688"
+            name="USB Device">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="c1f0c53f-06df-42d9-91b8-c6da0d5f4bac" targetElement="#681aee77-4c24-4884-99ca-da8b156d2c59"
+              sourceElement="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="40f5d502-2d7a-4428-a136-938a2e3b456f" targetElement="#9e40c9f9-4c69-4b13-9285-537d9f27889a"
+              sourceElement="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="ddac5744-a26d-4da7-9902-9c3b97f42daa" targetElement="#27f69cab-5346-45cb-b383-144a120fd6b9"
+              sourceElement="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="598ed6a8-b9d2-4f45-8561-abb851eb7892" targetElement="#fa6f2036-ef07-41e0-b414-0cddebf7e21f"
+              sourceElement="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="d2532880-2c9f-43ca-82fa-eff211861acc"
+            name="User" actor="true" human="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="c1066807-dfbf-4e92-9208-779b883ee36b" targetElement="#c29ba7d9-5518-44df-9fb7-efe6ea9ec9c7"
+              sourceElement="#d2532880-2c9f-43ca-82fa-eff211861acc"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="6451d496-6955-44a8-9934-8111226b4300" targetElement="#cc6ed1cf-13f6-46c8-bfe6-b1378f6cebed"
+              sourceElement="#d2532880-2c9f-43ca-82fa-eff211861acc"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="ec02e119-a57f-4edf-a0ba-53ed89adf302" targetElement="#a9ee1928-3755-4f14-bd85-d0d68f3d8eac"
+              sourceElement="#d2532880-2c9f-43ca-82fa-eff211861acc"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="a9ed2871-9332-4b09-8237-cdca15af4664" targetElement="#8202fa01-d042-470e-95ae-34f849bfae3f"
+              sourceElement="#d2532880-2c9f-43ca-82fa-eff211861acc"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="30508fbb-2dad-4742-a135-6f0364ed46b8"
+            name="Developer" actor="true" human="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="caf9c847-477a-4be6-b9e7-3d9d969ae74e" targetElement="#072f594d-2a2c-4638-9e9a-f8bef9b4b65b"
+              sourceElement="#30508fbb-2dad-4742-a135-6f0364ed46b8"/>
+        </ownedEntities>
+      </ownedEntityPkg>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
+        id="cc1cb6cd-d8ff-40ce-97d4-8e4447f4eb9c" name="System Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
+          id="ea98cd6b-d53c-4050-be82-bfc67e632afd" name="System Functions">
+        <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+            id="25875c8a-721c-40c9-b20c-f3be18d3a7d8" name="Root System Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="15ccef7d-6548-476e-b4c7-90024f02273e" name="Charge USB Device">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="00432c7a-bb0c-4ea3-8f44-6cad4a45f897" name="outEnergy"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="443ee4a6-83de-4cd6-b92a-a6d500095ca2" targetElement="#d7dcd2c3-8477-4e48-813b-37d723789282"
+                sourceElement="#15ccef7d-6548-476e-b4c7-90024f02273e"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="cc182961-8306-4490-ad7e-55ec1e734779" name="Receive Connectiom from USB Device">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="f27cc75d-cc59-4d53-936d-3086bc146282" name="inCharger Connection"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="eae3869c-c4bb-4004-aa97-fb7a9e21a7c9" targetElement="#5c89e425-2824-453f-9667-b34bad093801"
+                sourceElement="#cc182961-8306-4490-ad7e-55ec1e734779"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="3a9fdf79-17e7-4319-a5ad-3d1d81b3240a" name="Evaluate Performance">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="ab2c588c-1180-429a-bbc0-9825ba7955fe" name="inPerformance"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="c0b579ef-d55a-4a28-80ab-5aa83d10326f" targetElement="#072f594d-2a2c-4638-9e9a-f8bef9b4b65b"
+                sourceElement="#3a9fdf79-17e7-4319-a5ad-3d1d81b3240a"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="bf10200e-0a45-4bf8-9bf0-b73c2dd2ae2d" name="Connect USB Device">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="0a414933-37b5-4390-976b-bf4e2b351523" name="outCharger Connection"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="e5334a06-a812-46b7-a3ff-1b8c85c893d0" name="outUSB Device Connection"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="02a742a6-984b-4535-9df4-7edb43e48cc1" name="outState"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="2aa54b00-ca58-4fac-a801-62be1fbe8ca3" targetElement="#cc6ed1cf-13f6-46c8-bfe6-b1378f6cebed"
+                sourceElement="#bf10200e-0a45-4bf8-9bf0-b73c2dd2ae2d"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="bb0903d1-ef91-40c2-9080-0ab0e09c4476" name="Disconnect USB Device">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="b7c35204-652d-4032-81d6-9789c5c9a18b" name="outCharger Disconnect"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="5d285c5d-d2d9-4a71-a0da-8221b23b8dc3" name="outUSB Device Disconnect"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="ed88303d-0a25-4076-acb4-49c9e9441f26" targetElement="#fa6f2036-ef07-41e0-b414-0cddebf7e21f"
+                sourceElement="#bb0903d1-ef91-40c2-9080-0ab0e09c4476"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="d2f27069-20a7-46b5-ae78-d0e16a3bc752" name="Locate Charger">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="01bcca7f-baca-4787-bf62-b82fda25c14a" name="inLight"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="e241d9d9-4cd2-4beb-b35d-a48ced0a0bc4" targetElement="#c29ba7d9-5518-44df-9fb7-efe6ea9ec9c7"
+                sourceElement="#d2f27069-20a7-46b5-ae78-d0e16a3bc752"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="2872f223-d9a0-492c-a5ac-5224c73b62eb" name="Illuminate at night">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="0b7300cf-5e00-4e99-a511-f91c4a201f13" name="outLight"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="7d70730f-f82f-40ab-88ce-495f1ae7469d" targetElement="#8cd88e0f-e88d-4495-8ee9-ab4d62a59f98"
+                sourceElement="#2872f223-d9a0-492c-a5ac-5224c73b62eb"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="baf010d5-c082-45f7-934a-d4a7cade757c" name="Receive Connection">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="97743bd7-8f54-4126-877f-2e1f8104efa9" name="inUSB Device Connection"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="6e7eb4fa-2f7e-4597-8c3a-19a2480d09fa" targetElement="#681aee77-4c24-4884-99ca-da8b156d2c59"
+                sourceElement="#baf010d5-c082-45f7-934a-d4a7cade757c"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="d31c4c6d-95b5-47f4-94c6-d5b0e3880a89" name="Accept Charge">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="f716f037-e46c-46d9-8385-93d5a0b4456b" name="inEnergy"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="22dbd9f3-8c63-4f02-b45b-34494c7f360e" targetElement="#9e40c9f9-4c69-4b13-9285-537d9f27889a"
+                sourceElement="#d31c4c6d-95b5-47f4-94c6-d5b0e3880a89"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="8a654152-18a2-4105-8ad6-04e901ec03c5" name="Provide Performance">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="dcfcae18-9b5a-4e97-a784-89d06ac2bf9a" name="outPerformance"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="d5d279d2-2386-43bf-88aa-60ae28f92cef" targetElement="#27f69cab-5346-45cb-b383-144a120fd6b9"
+                sourceElement="#8a654152-18a2-4105-8ad6-04e901ec03c5"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="5d2a2c21-2dd0-4198-9567-7759f39d087a" name="Disconnect Charger">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="d1f67d75-a8ee-4e40-a0af-7106214e4427" name="inCharger Disconnect"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="574ab711-37cf-41f7-9d06-79f9f1cd2e14" targetElement="#db62a1e8-d839-47d8-af28-147bb11d99de"
+                sourceElement="#5d2a2c21-2dd0-4198-9567-7759f39d087a"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="dfa41de7-aa60-4cc9-a1f8-1a7a7c2a0a6a" name="Disconnect USB Device">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="9dee29d8-d4f7-466b-b547-686ce4d432ba" name="inUSB Device Disconnect"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="44a9a9aa-b7ad-4505-818c-3b16f5d0c133" targetElement="#8202fa01-d042-470e-95ae-34f849bfae3f"
+                sourceElement="#dfa41de7-aa60-4cc9-a1f8-1a7a7c2a0a6a"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="8d6e5fb0-906a-4438-8f18-6390bedee603" name="Provide State">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="a3eb388f-bb84-4a2f-9498-900cdee6a174" name="outState of Charge"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="1b03c44e-4c3e-4406-9daa-533e6ca9e9dd" targetElement="#1c56e87f-bfac-4219-ad30-d2ab7860cde5"
+                sourceElement="#8d6e5fb0-906a-4438-8f18-6390bedee603"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="ef7b3e76-b98d-4ecc-8588-0b90f3adce61" name="Comprehend State">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="2e41daf4-086a-4861-9dfd-b1285145a96b" name="inState of Charge"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="bb2b3164-cbd4-4693-bb77-34c2fee9eca6" name="inState"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="d31fc95a-74d4-4c55-98e8-aa77e9ae38fb" targetElement="#a9ee1928-3755-4f14-bd85-d0d68f3d8eac"
+                sourceElement="#ef7b3e76-b98d-4ecc-8588-0b90f3adce61"/>
+          </ownedFunctions>
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="7782afe0-9940-44cb-ad30-c853e31c297e" targetElement="#bd17664b-647c-45a1-908b-a64ebee317eb"
+              sourceElement="#25875c8a-721c-40c9-b20c-f3be18d3a7d8"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="c6f0d919-f4e6-4675-b08f-ef01b17ff80c" name="Light" target="#01bcca7f-baca-4787-bf62-b82fda25c14a"
+              source="#0b7300cf-5e00-4e99-a511-f91c4a201f13">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="b5d11169-0040-4bc5-a119-224e48aebb32" targetElement="#f4927822-abef-46f5-ad28-ae656f83b266"
+                sourceElement="#c6f0d919-f4e6-4675-b08f-ef01b17ff80c"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="a7bc47ab-02c2-451c-885c-21b6593f0940" name="Charger Connection"
+              target="#f27cc75d-cc59-4d53-936d-3086bc146282" source="#0a414933-37b5-4390-976b-bf4e2b351523">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="26de07c9-fa56-4980-9445-783ca8ca8ca3" targetElement="#fa55ee5d-0983-48e4-b322-120d16fa40bf"
+                sourceElement="#a7bc47ab-02c2-451c-885c-21b6593f0940"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="34879764-eb3d-44f7-a62c-9f9b13b9213d" name="USB Device Connection"
+              target="#97743bd7-8f54-4126-877f-2e1f8104efa9" source="#e5334a06-a812-46b7-a3ff-1b8c85c893d0">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="37b157eb-148f-4055-9132-e885aab8f869" targetElement="#0fb7308d-230c-4edd-85d2-f9396f79215c"
+                sourceElement="#34879764-eb3d-44f7-a62c-9f9b13b9213d"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="f910a653-dedc-4a6a-afed-daed584d98f8" name="Performance" target="#ab2c588c-1180-429a-bbc0-9825ba7955fe"
+              source="#dcfcae18-9b5a-4e97-a784-89d06ac2bf9a">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="00b8a3e5-4d15-492d-be9e-b0e78c3f631c" targetElement="#ebff2039-ec31-48c7-b6b5-e4cf7de64105"
+                sourceElement="#f910a653-dedc-4a6a-afed-daed584d98f8"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="18e4c717-3142-478b-97ce-ac6071224dc0" name="Energy" target="#f716f037-e46c-46d9-8385-93d5a0b4456b"
+              source="#00432c7a-bb0c-4ea3-8f44-6cad4a45f897">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="d39d1479-52cf-4aec-82aa-5c8d86aacd1a" targetElement="#74ec062b-1ab3-4b9d-8a42-c8e3461dd571"
+                sourceElement="#18e4c717-3142-478b-97ce-ac6071224dc0"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="8c49d807-baff-4987-af71-da2b48941225" name="Charger Disconnect"
+              target="#d1f67d75-a8ee-4e40-a0af-7106214e4427" source="#b7c35204-652d-4032-81d6-9789c5c9a18b">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="e8d729a9-9c7b-4c90-9c8d-46e779cfbdf8" targetElement="#60a33223-fc1c-4e9e-8fed-0bfafc5229bb"
+                sourceElement="#8c49d807-baff-4987-af71-da2b48941225"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="fa8c9285-2204-4baa-aeec-62844385067d" name="USB Device Disconnect"
+              target="#9dee29d8-d4f7-466b-b547-686ce4d432ba" source="#5d285c5d-d2d9-4a71-a0da-8221b23b8dc3">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="9abdbbdb-77e7-4549-9c0d-056a33809800" targetElement="#cc5f8a43-ae93-414f-b3ce-b1fd17f3e959"
+                sourceElement="#fa8c9285-2204-4baa-aeec-62844385067d"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="4e2b388c-ca4c-4717-8766-9e8f8559619b" name="State of Charge" target="#2e41daf4-086a-4861-9dfd-b1285145a96b"
+              source="#a3eb388f-bb84-4a2f-9498-900cdee6a174">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="3f2acc8d-ce11-44c7-b309-ad36ba71631b" targetElement="#c8af0022-9ca3-4c0e-bbb9-82e61972c73e"
+                sourceElement="#4e2b388c-ca4c-4717-8766-9e8f8559619b"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="d66dcd29-2eeb-4497-93b2-f80475159b08" name="State" target="#bb2b3164-cbd4-4693-bb77-34c2fee9eca6"
+              source="#02a742a6-984b-4535-9df4-7edb43e48cc1">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="e70e8751-2d76-4a49-92dd-950b8b030138" targetElement="#8153d012-6390-4ad1-a689-cc1fa3ffb208"
+                sourceElement="#d66dcd29-2eeb-4497-93b2-f80475159b08"/>
+          </ownedFunctionalExchanges>
+        </ownedSystemFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
+          id="25db71b2-9a68-49dd-bcdf-fbacf410141b" name="Capabilities">
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="42380b41-8e6c-4b62-8789-3b190b1429f5" name="Provide 24 hours visibility">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="503d0dc6-a894-4c43-aaef-1ae1610f9e1b" targetElement="#d464ec79-ddb8-4349-9384-ae6d836df758"
+              sourceElement="#7241a44f-4803-4c2d-9f10-7a7fac4514f3"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="2b131dfe-f155-41ae-af2a-de8d9a27037d" targetElement="#5b8f02db-ce96-426c-bb7a-a8fa12120850"
+              sourceElement="#42380b41-8e6c-4b62-8789-3b190b1429f5"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="7241a44f-4803-4c2d-9f10-7a7fac4514f3" involved="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="2627367b-463a-4c3d-8c94-9e0709b54899" name="Connect to USB Device Cable">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="f2765b29-9d5f-435c-9345-e7d95007ee80" targetElement="#78784ffe-a7f8-45e6-9207-24b7358fe532"
+              sourceElement="#2cf22a69-6cc6-4006-ba14-cbf8ddcff30a"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="ab689e2f-1f46-48d8-bf81-f178511f0890" targetElement="#65da71cb-fe02-4954-b49b-cf2ffd7bdb7a"
+              sourceElement="#f41d8719-22d8-4a70-9cf5-ede1553a03c0"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="e5659e84-7057-4306-ae41-3058fb03d7b9" targetElement="#040e5603-54d6-40a9-8200-e69fe237cce1"
+              sourceElement="#b86d856e-a308-4527-a496-3d9bed851f4d"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="fb62c545-4956-4862-9544-fea3a71b38ce" targetElement="#0af56b74-a09b-4532-9add-b4e162fd635c"
+              sourceElement="#2627367b-463a-4c3d-8c94-9e0709b54899"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="2cf22a69-6cc6-4006-ba14-cbf8ddcff30a" involved="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="f41d8719-22d8-4a70-9cf5-ede1553a03c0" involved="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="b86d856e-a308-4527-a496-3d9bed851f4d" involved="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="a35e746a-a388-4380-9db0-73a7ccbbc114" name="Disconnect USB Device Cable">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="f07c22c1-67b8-43be-837c-a4ea8c6984f6" targetElement="#49bb0472-9b44-4e2f-b31c-07bc0a5cb786"
+              sourceElement="#b1b340e9-eed0-43c3-ba7d-f1b081bbab73"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="eac4f318-d0e7-4772-b1af-d0333beb5a5b" targetElement="#bd6aa803-bdc2-43e8-889c-cbd9a328affa"
+              sourceElement="#70e3fd39-609b-4b42-93a7-0537afc4cb1d"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="1c9bfe0d-96f7-4e20-a66a-918429fa4499" targetElement="#766d546c-e8dd-4ed4-a275-ce1aff7b2300"
+              sourceElement="#c46b11f5-c59f-4faa-acaa-97d022f3f343"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="b6cbdef3-1ca8-4c2f-bb13-0297688685b1" targetElement="#763cdbc8-eaf0-4da5-b682-809c269747f4"
+              sourceElement="#a35e746a-a388-4380-9db0-73a7ccbbc114"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="b1b340e9-eed0-43c3-ba7d-f1b081bbab73" involved="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="70e3fd39-609b-4b42-93a7-0537afc4cb1d" involved="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="c46b11f5-c59f-4faa-acaa-97d022f3f343" involved="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="3b6e9db5-caba-4852-b4a2-9fa7eac8ccca" name="Charge USB Device">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="793e3d07-904e-4698-b462-3e275ee8b4a4" targetElement="#478d3304-1495-4585-aa79-ee67fbe5e4dd"
+              sourceElement="#23ed19a9-825e-49ec-9165-a55fb038faec"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="d074e6f4-40d8-4748-9e9c-8553c0c852fd" targetElement="#0190f3c5-c92a-4160-867e-21c1d16c397f"
+              sourceElement="#f7722cde-e056-4490-8449-de476a137f7d"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="b6cf4e62-3741-4280-a557-cceb4bc0dad7" included="#ade2ac7c-f3ba-4d0d-afcb-13b2a4334b16"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="673dafb9-6732-4e5d-88dc-ef4ac5e399e9" targetElement="#9d82a673-9f89-4ee4-aeaa-c39ea579e514"
+              sourceElement="#3b6e9db5-caba-4852-b4a2-9fa7eac8ccca"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="23ed19a9-825e-49ec-9165-a55fb038faec" involved="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="f7722cde-e056-4490-8449-de476a137f7d" involved="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="3d195fcc-5d6e-4447-b576-0696206eac8a" name="Monitor Operation Remotely">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="62533698-d91d-48d9-b7ad-a8dd3eb368d2" targetElement="#358f4339-bd52-4c3f-8c35-7896499c1155"
+              sourceElement="#85fd9424-fd6f-4b77-a3eb-7e696e6c07d1"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="b87f8b17-e08e-49ce-bc3b-444d6712b516" targetElement="#160a280d-7a2b-43f8-aa47-71146de57787"
+              sourceElement="#3d195fcc-5d6e-4447-b576-0696206eac8a"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="85fd9424-fd6f-4b77-a3eb-7e696e6c07d1" involved="#bc505784-2b5c-4c01-9acd-fcddab4f5506"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="ade2ac7c-f3ba-4d0d-afcb-13b2a4334b16" name="Generate Power">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="eab91244-eed8-468b-bb25-61d18b0cf0f8" involved="#97cb11a0-8815-450a-86d0-544159cb09b7"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="f857a947-e444-45f8-bcb5-a576d5b8b551" involved="#7190bda6-678e-475c-a110-e6e6d6b174ad"/>
+        </ownedCapabilities>
+      </ownedAbstractCapabilityPkg>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="d21b3d61-056a-486b-a9a9-f2633a316796" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="6f7b89c9-e2a2-406e-ac2a-cd628ab4faf7" name="Data">
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="ee21d927-acb5-4a7e-91dc-f5bc04ef3bc8" name="Predefined Types">
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:BooleanType"
+              id="8ea39016-6c82-47a9-962e-ba0a6ad390fe" name="Boolean" visibility="PUBLIC">
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="714ee0e9-f625-46d1-bf63-b65e2a814526" name="True" abstractType="#8ea39016-6c82-47a9-962e-ba0a6ad390fe"
+                value="true"/>
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="c19961ec-a0e5-4eb1-b89b-666412c032ed" name="False" abstractType="#8ea39016-6c82-47a9-962e-ba0a6ad390fe"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="46942484-b47b-4265-a39a-c02b37dfbd85" name="Byte" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="2092519f-16b4-4575-a776-42d0fa800814" name="" abstractType="#46942484-b47b-4265-a39a-c02b37dfbd85"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="ba09fad8-f2f7-426a-bf84-af594624ffe1" name="" abstractType="#46942484-b47b-4265-a39a-c02b37dfbd85"
+                value="255"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="c56a7654-129e-4ea0-9ee7-e965b43e5c2a" name="Char" visibility="PUBLIC">
+            <ownedMinLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="a9efba22-9cb6-40e0-b440-cca2179cc272" name="" abstractType="#6fedda48-4bf5-452d-bc63-aca367259a00"
+                value="1"/>
+            <ownedMaxLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="f3626ad6-0bd6-4c45-ae30-f766b200b954" name="" abstractType="#6fedda48-4bf5-452d-bc63-aca367259a00"
+                value="1"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="0c466677-9f5e-4ebd-899a-4b6f911bf708" name="Double" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="f0d36992-7566-4bb2-ba79-f2d75560ba9c" name="Float" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="0ae794a6-86dd-43b3-82c9-195e9d453745" name="Hexadecimal" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="ed5110aa-9e4c-4228-a5ec-9c178d07087a" name="" abstractType="#0ae794a6-86dd-43b3-82c9-195e9d453745"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                id="abbf443d-eb2c-4a01-a24f-160c5d77515c" abstractType="#0ae794a6-86dd-43b3-82c9-195e9d453745"
+                operator="SUB">
+              <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                  id="2696511f-e76a-435d-92da-f94c314b2e31" operator="POW">
+                <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="303f274c-a2a9-44f0-818e-112975df9ed0" value="2"/>
+                <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="db79310c-af5a-4fd9-b65f-e2a454562cc2" value="64"/>
+              </ownedLeftOperand>
+              <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="2beee09c-4ac0-4066-88d7-95b6172829f5" value="1"/>
+            </ownedMaxValue>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="9a65f323-8d7a-4067-9813-3166459cc568" name="Integer" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="be2e06a7-9f5f-4cf8-a975-4e7098f78dfc" name="Long" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="ca4e1b83-340d-4cde-8b95-e75ccfe7a8cf" name="LongLong" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="0c0a3dc1-7dea-40d8-b1b1-e1c2d2027206" name="Short" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="c21d107a-e4ad-4ba1-93ee-e6273d4f24e4" name="String" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="f3cf9064-99dc-46b2-80fe-00f0fc1a0042" name="UnsignedInteger" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="4c41630f-e68f-42d4-b419-751a174713b0" name="" abstractType="#f3cf9064-99dc-46b2-80fe-00f0fc1a0042"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="6fedda48-4bf5-452d-bc63-aca367259a00" name="UnsignedShort" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="54a1f389-279a-413b-ba33-cb470ae6ba00" name="" abstractType="#6fedda48-4bf5-452d-bc63-aca367259a00"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="85cc44e1-abc2-484d-8f17-9761cabd9102" name="UnsignedLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="508695f5-57a7-46d4-bb6e-487f85a77a88" name="" abstractType="#85cc44e1-abc2-484d-8f17-9761cabd9102"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="78a9ac0e-d035-43f7-a58f-4f4681209525" name="UnsignedLongLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="c3e9db05-7a93-479e-8058-1ab2567bc3d4" name="" abstractType="#78a9ac0e-d035-43f7-a58f-4f4681209525"
+                value="0"/>
+          </ownedDataTypes>
+        </ownedDataPkgs>
+      </ownedDataPkg>
+      <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
+          id="bafe2efd-0957-4da2-8cd4-01ebda5ba643" name="Structure">
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="5fb2ae93-1890-4c22-8702-c09bb43d4610" targetElement="#4559ffc2-8f41-41de-8033-e174bedd3988"
+            sourceElement="#03e11920-37a5-4895-9074-d507000bd13f"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="fdded126-3d93-4b76-8727-ee8b74d463da" targetElement="#fe52c87c-3cab-410e-aa21-8beda2e65e05"
+            sourceElement="#b06135c7-d0e2-4647-a83a-febfa028a8b5"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="aca8b631-3c84-40fb-955d-a236e7e58c89" targetElement="#14a10f90-487d-47ce-929c-d39233bec738"
+            sourceElement="#7bd99959-98a1-48d8-86d8-1aaa9677ed52"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="f69ee4e2-89c6-4cc4-986b-3937fcaa33cb" targetElement="#32418477-cb0d-4da6-b30e-ef1355b08b79"
+            sourceElement="#149a076f-0613-47a2-8fcf-dc9c3caa4c54"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="26371204-aff1-4929-9e2a-67fcec3c3c3d"
+            name="System" abstractType="#97cb11a0-8815-450a-86d0-544159cb09b7"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="03e11920-37a5-4895-9074-d507000bd13f"
+            name="Charger" abstractType="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="b06135c7-d0e2-4647-a83a-febfa028a8b5"
+            name="USB Device" abstractType="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="7bd99959-98a1-48d8-86d8-1aaa9677ed52"
+            name="User" abstractType="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="149a076f-0613-47a2-8fcf-dc9c3caa4c54"
+            name="Developer" abstractType="#bc505784-2b5c-4c01-9acd-fcddab4f5506"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="93d7bc55-3b28-488b-abd2-01536e77da66"
+            name="Sun" abstractType="#7190bda6-678e-475c-a110-e6e6d6b174ad"/>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="97cb11a0-8815-450a-86d0-544159cb09b7" name="System">
+          <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+              id="40f0c219-d577-42b7-9c2c-006344670768" name="System State Machine">
+            <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                id="8bc871c4-3d37-4ef7-856c-27abbaef6f1c" name="Default Region"/>
+          </ownedStateMachines>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14" name="Charger" actor="true">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="e35ff92f-4ec0-4c41-8b52-43b19264b967" targetElement="#3d3e471a-9630-4580-bd76-d970fc61f3ee"
+              sourceElement="#02f9b8dc-9178-4e29-9ab3-dfffb729ffca"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="62c26bc8-0986-4fba-877b-fc1a16abcd68" targetElement="#c4cc54d7-e9e0-4522-ba82-14e0313bcb4f"
+              sourceElement="#952fbdc3-f802-4320-8342-08a9d602bc12"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="5cf72b63-4a10-421c-b3fe-23de5478b842" targetElement="#b2c8ded1-0ebe-471c-8ce1-55a52ddc7c12"
+              sourceElement="#62302af8-6562-468c-bae1-c43cf1eca01c"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="ee7611c4-291a-4e9c-b071-869183faba74" targetElement="#7f0c9f01-8d62-4001-8d53-f906a5d11e39"
+              sourceElement="#a9359cd9-8fa5-4faf-b96e-7bb08627aa59"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="040d18a6-e883-4f78-bf07-ec9c40bce29b" targetElement="#223a3928-81d3-4573-acb8-c0ca33764c97"
+              sourceElement="#72f1655d-c532-4122-8535-fad9a736533e"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="02f9b8dc-9178-4e29-9ab3-dfffb729ffca" targetElement="#15ccef7d-6548-476e-b4c7-90024f02273e"
+              sourceElement="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="952fbdc3-f802-4320-8342-08a9d602bc12" targetElement="#2872f223-d9a0-492c-a5ac-5224c73b62eb"
+              sourceElement="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="62302af8-6562-468c-bae1-c43cf1eca01c" targetElement="#cc182961-8306-4490-ad7e-55ec1e734779"
+              sourceElement="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="a9359cd9-8fa5-4faf-b96e-7bb08627aa59" targetElement="#5d2a2c21-2dd0-4198-9567-7759f39d087a"
+              sourceElement="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="72f1655d-c532-4122-8535-fad9a736533e" targetElement="#8d6e5fb0-906a-4438-8f18-6390bedee603"
+              sourceElement="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="1273929d-871f-497a-b81f-319f7b0c16ef" targetElement="#d4cb2b21-11db-4e83-9684-879ce4a6cb02"
+              sourceElement="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="97b581b9-178a-47d3-b5e7-a77272244f3d" name="USB Device" actor="true">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="e5ead138-7e1e-41aa-b77f-d94f6091384b" targetElement="#c1f0c53f-06df-42d9-91b8-c6da0d5f4bac"
+              sourceElement="#25b401a5-2a56-4e39-9845-e1eddff7e968"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="a0771cc0-8afe-4b7f-81b2-bb5c613994b4" targetElement="#40f5d502-2d7a-4428-a136-938a2e3b456f"
+              sourceElement="#9c7aeac1-d393-4b03-aa14-bd10055096de"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="6c4b6dc4-5042-42aa-861e-bc5bde709733" targetElement="#ddac5744-a26d-4da7-9902-9c3b97f42daa"
+              sourceElement="#92fb84ac-f326-4b95-94ba-9649bb43e2c5"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="9294b2e4-abe3-4af6-9dd0-a730e3e9a85d" targetElement="#a9ed2871-9332-4b09-8237-cdca15af4664"
+              sourceElement="#7522b2a7-a4d8-4d80-9b1b-092dda7bd901"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="2a3ce9e6-daae-45d9-ac16-e04a3b55670c" targetElement="#598ed6a8-b9d2-4f45-8561-abb851eb7892"
+              sourceElement="#d55c89e9-a978-490e-bd5d-93e6e5354c27"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="25b401a5-2a56-4e39-9845-e1eddff7e968" targetElement="#baf010d5-c082-45f7-934a-d4a7cade757c"
+              sourceElement="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="9c7aeac1-d393-4b03-aa14-bd10055096de" targetElement="#d31c4c6d-95b5-47f4-94c6-d5b0e3880a89"
+              sourceElement="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="92fb84ac-f326-4b95-94ba-9649bb43e2c5" targetElement="#8a654152-18a2-4105-8ad6-04e901ec03c5"
+              sourceElement="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="7522b2a7-a4d8-4d80-9b1b-092dda7bd901" targetElement="#dfa41de7-aa60-4cc9-a1f8-1a7a7c2a0a6a"
+              sourceElement="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="d55c89e9-a978-490e-bd5d-93e6e5354c27" targetElement="#bb0903d1-ef91-40c2-9080-0ab0e09c4476"
+              sourceElement="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="159461ca-d81c-4d99-8338-183cb7a29b93" targetElement="#f0f82df6-09f5-4686-838a-8e9a6ea8e688"
+              sourceElement="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="082c9148-bad6-4643-9153-12ea48ae437b" name="User" actor="true">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="7f401bdb-cc58-48d5-a715-64edecef8db3" targetElement="#c1066807-dfbf-4e92-9208-779b883ee36b"
+              sourceElement="#2d051506-f85f-4cf2-8f22-31e96fbc30bc"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="60ed9c7d-ec8f-4b3c-8f18-b256d30987ae" targetElement="#6451d496-6955-44a8-9934-8111226b4300"
+              sourceElement="#aff4b0f2-4e64-4527-8bd1-6761050cae98"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="34e4b6e9-9131-4cb4-9105-d09e6ee94fac" targetElement="#ec02e119-a57f-4edf-a0ba-53ed89adf302"
+              sourceElement="#1e5c54ec-692c-46ab-a89a-0b40874c6f92"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="2d051506-f85f-4cf2-8f22-31e96fbc30bc" targetElement="#d2f27069-20a7-46b5-ae78-d0e16a3bc752"
+              sourceElement="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="aff4b0f2-4e64-4527-8bd1-6761050cae98" targetElement="#bf10200e-0a45-4bf8-9bf0-b73c2dd2ae2d"
+              sourceElement="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="1e5c54ec-692c-46ab-a89a-0b40874c6f92" targetElement="#ef7b3e76-b98d-4ecc-8588-0b90f3adce61"
+              sourceElement="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="deccca76-580e-40d1-9a87-02ced453c9f4" targetElement="#d2532880-2c9f-43ca-82fa-eff211861acc"
+              sourceElement="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="bc505784-2b5c-4c01-9acd-fcddab4f5506" name="Developer" actor="true">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="43a7ef1b-786f-419a-8af7-3c2a5a8012ce" targetElement="#caf9c847-477a-4be6-b9e7-3d9d969ae74e"
+              sourceElement="#b6023b66-f675-47e1-b47e-06f95a549960"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="b6023b66-f675-47e1-b47e-06f95a549960" targetElement="#3a9fdf79-17e7-4319-a5ad-3d1d81b3240a"
+              sourceElement="#bc505784-2b5c-4c01-9acd-fcddab4f5506"/>
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="c395d8ad-94ac-449a-b256-73185e9f98b7" targetElement="#30508fbb-2dad-4742-a135-6f0364ed46b8"
+              sourceElement="#bc505784-2b5c-4c01-9acd-fcddab4f5506"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="7190bda6-678e-475c-a110-e6e6d6b174ad" name="Sun" actor="true"/>
+      </ownedSystemComponentPkg>
+      <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="a56ca651-354c-435d-bda1-a01d9152cdfc"
+          name="Missions">
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="c7ca4032-7bce-4de7-8484-52e1da2095fd" targetElement="#5b8f02db-ce96-426c-bb7a-a8fa12120850"
+            sourceElement="#d6ba788a-2cb2-4e9f-b4b9-6f2e65755dc7"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="fea61d20-305a-4fef-b043-aa3f85f58786" targetElement="#0af56b74-a09b-4532-9add-b4e162fd635c"
+            sourceElement="#ed905a18-16cd-4c50-9ca5-13bdee52b517"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="4ca417ed-01f3-4d17-a0eb-9091c6aeb7a3" targetElement="#763cdbc8-eaf0-4da5-b682-809c269747f4"
+            sourceElement="#32c2770d-7016-4d5b-8002-5433046f269c"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="3b50ea5d-dd68-48fc-894d-671eca99bf6d" targetElement="#9d82a673-9f89-4ee4-aeaa-c39ea579e514"
+            sourceElement="#bbb01a0b-17a4-421e-8ea4-16fad57a3926"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="94f071c9-ae0e-4758-a607-9b3dcdb260d4" targetElement="#160a280d-7a2b-43f8-aa47-71146de57787"
+            sourceElement="#e872899e-819c-480a-9fa9-6b0987652efe"/>
+        <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="d6ba788a-2cb2-4e9f-b4b9-6f2e65755dc7"
+            name="Provide 24 hours visibility">
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="7a49ccbd-aca3-43ae-ad77-61a06dc2a6da" involved="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+        </ownedMissions>
+        <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="ed905a18-16cd-4c50-9ca5-13bdee52b517"
+            name="Connect to USB Device Cable">
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="4eb3612f-f6e9-4f97-8a2a-e1474b11e333" involved="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="f43230f0-66d9-4d2e-a1d0-e788d9137a9d" involved="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="b5c298ce-3325-437f-819c-c952b66b30ca" involved="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+        </ownedMissions>
+        <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="32c2770d-7016-4d5b-8002-5433046f269c"
+            name="Disconnect USB Device Cable">
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="a3402a82-4edb-4a4b-a0e0-a938e3a0f196" involved="#082c9148-bad6-4643-9153-12ea48ae437b"/>
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="41736fa9-f4c2-4470-b796-9e4734602723" involved="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="98aa78e8-4268-47a4-ba05-befc348c38cc" involved="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+        </ownedMissions>
+        <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="bbb01a0b-17a4-421e-8ea4-16fad57a3926"
+            name="Charge USB Device">
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="3d60bd07-babc-49b7-95bf-7aabb381a6ab" involved="#97b581b9-178a-47d3-b5e7-a77272244f3d"/>
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="76d434fe-4cea-45fd-a819-67ceb2dfd119" involved="#3f7fa60a-1b4c-42e3-bd69-4e5e3f184d14"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="460477b1-b163-4454-9cbb-ccc15b49097d" capability="#ade2ac7c-f3ba-4d0d-afcb-13b2a4334b16"/>
+        </ownedMissions>
+        <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="e872899e-819c-480a-9fa9-6b0987652efe"
+            name="Monitor Operation Remotely">
+          <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
+              id="63526adb-4fcb-493c-afe4-af31a1ec88b2" involved="#bc505784-2b5c-4c01-9acd-fcddab4f5506"/>
+        </ownedMissions>
+      </ownedMissionPkg>
+      <ownedOperationalAnalysisRealizations xsi:type="org.polarsys.capella.core.data.ctx:OperationalAnalysisRealization"
+          id="5da637e6-8bf4-4851-aa0b-4f3372613125" targetElement="#7a88c801-9008-4948-83bd-0dd3f016bd08"
+          sourceElement="#cc1cb6cd-d8ff-40ce-97d4-8e4447f4eb9c"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.la:LogicalArchitecture"
+        id="20236253-35a2-4784-8ac6-c78c16ec0b05" name="Logical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
+          id="f2f2b89e-0d37-436e-b5a2-dbc81eacf6d0" name="Logical Functions">
+        <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+            id="26bc282a-92ff-4928-82a0-b53090712332" name="Root Logical Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="591cea97-98b1-44c3-97bc-91d16457a667" targetElement="#25875c8a-721c-40c9-b20c-f3be18d3a7d8"
+              sourceElement="#26bc282a-92ff-4928-82a0-b53090712332"/>
+        </ownedLogicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="e314aabc-b985-4060-834b-abe12010047f" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="bff21a2f-a77e-40a9-87b8-8418734777fc" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="a2d7b78b-0116-4ef9-b0c1-f58ba24288a5" name="Data"/>
+      <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+          id="e63bb483-7d3d-4cfd-b4f8-9705e91324ae" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="92e907c4-5df1-432b-8432-0ec3550cc2d1"
+            name="Logical System" abstractType="#4470be51-0227-447e-bad9-29d2beeab20e"/>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="4470be51-0227-447e-bad9-29d2beeab20e" name="Logical System">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="1fba40ff-6e98-459c-a474-2dcc1fcbff42" targetElement="#97cb11a0-8815-450a-86d0-544159cb09b7"
+              sourceElement="#4470be51-0227-447e-bad9-29d2beeab20e"/>
+        </ownedLogicalComponents>
+      </ownedLogicalComponentPkg>
+      <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
+          id="f53dcbcd-0523-4215-8835-91a2204b4898" targetElement="#cc1cb6cd-d8ff-40ce-97d4-8e4447f4eb9c"
+          sourceElement="#20236253-35a2-4784-8ac6-c78c16ec0b05"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.pa:PhysicalArchitecture"
+        id="ebfbf77e-219f-4a6d-815c-0ea0526dfa69" name="Physical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunctionPkg"
+          id="1528cc7f-a4f6-4568-a77b-0fcdd190a6a5" name="Physical Functions">
+        <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+            id="f192cc17-9bda-4a7e-8486-50a7344a9325" name="Root Physical Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="6058e59d-6164-45f1-8d17-388fab8ea1fe" targetElement="#26bc282a-92ff-4928-82a0-b53090712332"
+              sourceElement="#f192cc17-9bda-4a7e-8486-50a7344a9325"/>
+        </ownedPhysicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="52030e03-809c-42a0-9359-ad80be02b01e" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="bd110436-a2c4-4743-bd96-220d4d05f719" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="5df0e884-df08-4178-802e-a436308f0757" name="Data"/>
+      <ownedPhysicalComponentPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
+          id="f6ac02a2-098f-4f76-937a-0dc59b39e1fa" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="464f0cf6-951e-48b0-bfb0-8eeef45da8e6"
+            name="Physical System" abstractType="#2b74719a-40a2-491d-8a8e-06c1794fbe74"/>
+        <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+            id="2b74719a-40a2-491d-8a8e-06c1794fbe74" name="Physical System">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="92b9e21f-7031-42d5-ba02-fcc273279eb9" targetElement="#4470be51-0227-447e-bad9-29d2beeab20e"
+              sourceElement="#2b74719a-40a2-491d-8a8e-06c1794fbe74"/>
+        </ownedPhysicalComponents>
+      </ownedPhysicalComponentPkg>
+      <ownedLogicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalArchitectureRealization"
+          id="42d85898-ddeb-4638-aa4f-a4af84b07d58" targetElement="#20236253-35a2-4784-8ac6-c78c16ec0b05"
+          sourceElement="#ebfbf77e-219f-4a6d-815c-0ea0526dfa69"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.epbs:EPBSArchitecture"
+        id="3bbaffe6-d90f-43fb-8623-d1b0bd6292d5" name="EPBS Architecture">
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="de83eca6-00e3-4a74-902c-2d1dac7f64d5" name="Capabilities"/>
+      <ownedConfigurationItemPkg xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItemPkg"
+          id="a108e76c-3764-4b47-9538-bac1474db33f" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="362c731f-c0df-4c73-be51-a328b23858ea"
+            name="System" abstractType="#b7dfdb03-39e3-4f41-80cb-8720587a6eed"/>
+        <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+            id="b7dfdb03-39e3-4f41-80cb-8720587a6eed" name="System" kind="SystemCI">
+          <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+              id="766d7f25-824a-4087-8273-0eeb6513d83d" targetElement="#2b74719a-40a2-491d-8a8e-06c1794fbe74"
+              sourceElement="#b7dfdb03-39e3-4f41-80cb-8720587a6eed"/>
+        </ownedConfigurationItems>
+      </ownedConfigurationItemPkg>
+      <ownedPhysicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArchitectureRealization"
+          id="1e201461-a4da-4acc-9931-03711597a86d" targetElement="#ebfbf77e-219f-4a6d-815c-0ea0526dfa69"
+          sourceElement="#3bbaffe6-d90f-43fb-8623-d1b0bd6292d5"/>
+    </ownedArchitectures>
+  </ownedModelRoots>
+</org.polarsys.capella.core.data.capellamodeller:Project>
